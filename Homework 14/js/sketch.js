@@ -22,14 +22,8 @@ var shapeYSpeeds = [];
 var mouseShapeX;
 var mouseShapeY;
 
-var rectangleObject;
-
 function setup() {
     createCanvas(500, 600);
-   
-    // create the object
-    rectangleObject = new Rectangle(100,200, 100, 50, 120, 35, 210); 
-
     // get a random speed when the it first starts
     for (var i = 0; i < 50; i++) {
         shapeXSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
@@ -45,10 +39,6 @@ function setup() {
 function draw() {
     background(120, 45, 78);
     stroke(0);
-    
-    // create and display an object
-    rectangleObject.display();
-
     fill(0);
 
     // call createBorders function
